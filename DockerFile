@@ -1,6 +1,6 @@
 FROM node:8-alpine
-Run mkdir -p C:\Users\CHIRANJEEVI MANCHALA\Devops1\New-ECS-Project\app
-WORKDIR C:\Users\CHIRANJEEVI MANCHALA\Devops1\New-ECS-Project\app
+Run mkdir -p D:\app
+WORKDIR D:\app
 COPY . .
 RUN npm install
 EXPOSE 3000
