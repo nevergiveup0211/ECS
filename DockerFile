@@ -2,6 +2,7 @@ FROM node:8-alpine
 Run mkdir -p D:\app
 WORKDIR D:\app
 COPY . .
+RUN cd /tmp \ && apt-get update \ && apt-get install python -y
 RUN npm install
 EXPOSE 3000
-CMD [ "node", "new.js" ]
+CMD [ "node", "spring-boot.js" ]
